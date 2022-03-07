@@ -17,7 +17,7 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
 
   
  - ## The Timeline Section 
-   - 
+  
 
   - ## The Gallery Section
     
@@ -93,6 +93,8 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
 
   - ### Code
     https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/?child=first
+    
+    https://www.youtube.com/watch?v=riDzcEQbX6k
 
   - ### Information 
     https://www.radiotimes.com/quizzes/pub-quiz-general-knowledge/
