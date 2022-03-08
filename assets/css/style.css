@@ -34,3 +34,17 @@ body.wrong {
     --hue: var(--hue-wrong);
     background-color: hsl(var(--hue), 100%, 30%);
 }
+.game-area {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+#answer-buttons{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0; 
+}

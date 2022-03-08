@@ -91,6 +91,8 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
   - ### Images
     https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain
 
+    https://hslpicker.com/#5f5959
+
   - ### Code
     https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/?child=first
     
