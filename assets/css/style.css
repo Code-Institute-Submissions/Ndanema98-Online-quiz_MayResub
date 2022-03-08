@@ -57,6 +57,7 @@ body.wrong {
 }
 .btn:hover {
     border-color: black;
+    color:rgb(40, 252, 249);
 }
 .btn.correct {
     --hue: var(--hue-correct);
@@ -67,4 +68,17 @@ body.wrong {
     --hue: var(--hue-wrong);
     background-color: hsl(var(--hue), 100%, 30%);
     color: white;
+}
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding:10px 20px;
+}
+.controls {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.hide {
+    display: none;
 }
