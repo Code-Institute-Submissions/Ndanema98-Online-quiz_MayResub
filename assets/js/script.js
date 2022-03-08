@@ -1,4 +1,5 @@
 const startButton = document.getElementById("start-btn")
+const nextButton = document.getElementById("next-btn")
 const questionContainerElements = document.getElementById("question-container") 
 const questionElement = document.getElementById("question")
 const answerButtonsElement = document.getElementById("answer-btns")
@@ -8,7 +9,9 @@ const questions = [
         question: "What is the capital of New Zealand?",
         answers: [ 
             {text: "Wellington", correct: true},
-            {text: "London", correct: false}
+            {text: "London", correct: false},
+            {text: "Paris", correct:false},
+            {text: "Rome", correct:false},
         ]
     }
 ]
@@ -27,9 +30,28 @@ function startGame() {
     nextQuestion()
 }
 function nextQuestion(){
+    resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 function showQuestion(question){
     questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement("button")
+        button.innerText = answer.text
+        button.classList.add("btn")
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener("click", selectAnswer)
+        answerButtonsElement.appendChild(button)
+    })
 }
-function selectAnswer(){}
+
+function resetState(){
+    nextButton.classList.add("hide")
+    while (answerButtonsElement.firstChild){
+        answerButtonsElement.removeChild
+        (answerButtonsElement.firstChild)
+    }
+}
+function selectAnswer(e){}
