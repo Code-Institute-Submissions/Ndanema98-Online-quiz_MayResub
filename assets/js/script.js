@@ -42,14 +42,14 @@ function showQuestion(question){
 }
 
 function resetState(){
-    
+    clearStatusClass(document.body)
     nextButton.classList.add("hide")
     while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild
         (answerButtonsElement.firstChild)
     }
 }
-function selectAnswer(e){
+function selectAnswer(e) {
      const selectedButton = e.target
      const correct = selectedButton.dataset.correct
      setStatusClass(document.body, correct)
@@ -61,6 +61,7 @@ function selectAnswer(e){
 } else {
     startButton.innerText = "restart"
     startButton.classList.remove("hide")
+}
 }
 function setStatusClass(element, correct) {
     clearStatusClass(element)
@@ -74,7 +75,7 @@ function clearStatusClass(element) {
     element.classList.remove("correct")
     element.classList.remove("wrong")
 }
-}
+
 const questions = [
     {
         question: "What is the capital of New Zealand?",
