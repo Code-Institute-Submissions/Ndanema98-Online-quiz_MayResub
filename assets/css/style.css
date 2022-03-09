@@ -1,3 +1,36 @@
+/* -- Global -- */
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 0%, 45%);
+}
+:root {
+    --hue-neutral: 1000;
+    --hue-wrong: 0; 
+    --hue-correct: 145;
+}
+body.correct {
+    --hue: var(--hue-correct);
+    background-color: hsl(var(--hue), 100%, 30%);
+}
+body.wrong {
+    --hue: var(--hue-wrong);
+    background-color: hsl(var(--hue), 100%, 30%);
+} 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.hide {
+    display: none;
+}
+
+/* -- Heading -- */
 .logo {
     width: 100px;
     height: 70px;
@@ -10,35 +43,7 @@ h1 {
     top: 0;
     color: rgb(40, 252, 249);
 }
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family:
-}
-:root {
-    --hue-neutral: 1000;
-    --hue-wrong: 0; 
-    --hue-correct: 145;
-}
-body {
-    --hue: var(--hue-neutral);
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(var(--hue), 0%, 45%);
-}
-body.correct {
-    --hue: var(--hue-correct);
-    background-color: hsl(var(--hue), 100%, 30%);
-}
-body.wrong {
-    --hue: var(--hue-wrong);
-    background-color: hsl(var(--hue), 100%, 30%);
-}
+/* -- Game layout -- */
 .game-area {
     text-align: center;
     width: 800px;
@@ -51,19 +56,55 @@ body.wrong {
     margin-right: auto;
     box-shadow: 0 0 10px 2px;
 }
+#question-container {
+    width: 80%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 40px 0;
+}
+.score-area {
+    text-align: center;
+    margin: 5px auto;
+    width: 60%;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+}
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+#correct {
+    color: green;
+    font-weight: bold;
+}
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+.controls {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
 
+/* -- Buttons -- */
 #answer-btns{
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 10px;
+    gap: 30px;
     margin: 20px 0; 
+
 }
 .btn {
     --hue: var(--hue-neutral);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px 10px;
     color: rgb(0, 111, 201);
     outline: none; 
+    font-size: 1.5rem;
+    font-weight: bold;
+
 }
 .btn:hover {
     border-color: black;
@@ -84,11 +125,38 @@ body.wrong {
     font-weight: bold;
     padding:10px 20px;
 }
-.controls {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+/* -- Media queries -- */
+@media (max-width: 414px) {
+    .controls {
+        width: 100%;
+    }
+    .question-container {
+        padding: 10% 0;
+        width: 100%;
+    }
+    .score-area {
+        width: 100%;
+    }
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+    .header {
+        font-size: 2rem;
+    }
 }
-.hide {
-    display: none;
+
+@media (max-width: 320px) {
+    .game-area {
+        height: 70vh;
+    }
+    .controls {
+        width: 75%;
+        margin: 10px auto;
+    }
+    .question-container {
+        padding: 10px 0;
+    }
+
 }
