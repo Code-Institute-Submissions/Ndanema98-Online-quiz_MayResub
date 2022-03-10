@@ -10,11 +10,11 @@ let shuffledQuestions, currentQuestionIndex
 
 
 var interval = setInterval(function (){
-  document.getElementById('timer-sec').innerHTML= count;
+  document.getElementById('count').innerHTML= count;
   count--;
-  if (count === -2){
+  if (count === -1){
     clearInterval(interval);
-    document.getElementById('timer-sec').innerHTML='Done'; 
+    document.getElementById('count').innerHTML='Done'; 
     alert("You're out of time!");
     startButton.innerText = "Restart"
     startButton.classList.remove("hide")

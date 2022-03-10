@@ -1,5 +1,6 @@
 /* -- Global -- */
 body {
+    font-family: 'Roboto Condensed', 'Saira Extra Condensed';
     --hue: var(--hue-neutral);
     padding: 0;
     margin: 0;
@@ -37,6 +38,7 @@ body.wrong {
     padding-right: 5px;
 }
 h1 {
+    font-family: 'Roboto Condensed', 'Saira Extra Condensed';
     text-align: center;
     font-size: 2.5rem;
     position: absolute;
