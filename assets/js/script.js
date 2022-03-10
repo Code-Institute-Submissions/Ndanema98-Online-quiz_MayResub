@@ -4,6 +4,7 @@ const questionContainerElements = document.getElementById("question-container")
 const questionElement = document.getElementById("question")
 const answerButtonsElement = document.getElementById("answer-btns")
 const instructionContainerElements = document.getElementById("instructions")
+const timerElement = document.getElementById("timer-area")
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -19,6 +20,7 @@ function startGame() {
     startButton.classList.add("hide")
     questionContainerElements.classList.remove("hide")
     instructionContainerElements.classList.add("hide")
+    timerElement.classList.remove("hide")
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     nextQuestion()
@@ -74,6 +76,15 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
     element.classList.remove("correct")
     element.classList.remove("wrong")
+}
+function incrementScore(){
+
+    let oldScore = parseInt(document.getElementById("correct").innerText)
+    document.getElementById("correct").innertext = ++oldScore;
+}
+function incrementWrongAnswer(){
+    let oldScore = parseInt(document.getElementById("incorrect").innerText)
+    document.getElementById("incorrect").innertext = ++oldScore;
 }
 
 const questions = [
