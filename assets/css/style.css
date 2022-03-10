@@ -101,6 +101,18 @@ h1 {
     padding: 0 8px;
     color: whitesmoke;
 }
+.timer-sec {
+    font-size: 18px;
+    font-weight: 500;
+    background: black;
+    height: 25px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid black
+
+}
 /* -- Buttons -- */
 #answer-btns{
     display: grid;
