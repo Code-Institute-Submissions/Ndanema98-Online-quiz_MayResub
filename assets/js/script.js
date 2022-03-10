@@ -8,6 +8,19 @@ const timerElement = document.getElementById("timer-area")
 
 let shuffledQuestions, currentQuestionIndex
 
+var count = 15;
+var interval = setInterval(function(){
+  document.getElementById('timer-sec').innerHTML=count;
+  count--;
+  console.log("working")
+  if (count === -2){
+    clearInterval(interval);
+    document.getElementById('timer-sec').innerHTML='Done';
+    // or...
+    alert("You're out of time!");
+  }
+}, 1000);
+
 startButton.addEventListener("click", startGame)
 nextButton.addEventListener("click",() => {
     currentQuestionIndex++
@@ -39,7 +52,7 @@ function showQuestion(question){
             button.dataset.correct = answer.correct
         }
         button.addEventListener("click", selectAnswer)
-        answerButtonsElement.appendChild(button)
+        answerButtonsElement.appendChild(button) 
     })
 }
 

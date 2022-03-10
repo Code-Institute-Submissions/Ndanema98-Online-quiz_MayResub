@@ -101,7 +101,7 @@ h1 {
     padding: 0 8px;
     color: whitesmoke;
 }
-.timer-sec {
+#timer-sec {
     font-size: 18px;
     font-weight: 500;
     background: black;
@@ -109,7 +109,7 @@ h1 {
     color: white;
     text-align: center;
     line-height: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid black
 
 }
