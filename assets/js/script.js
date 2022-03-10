@@ -8,16 +8,17 @@ const timerElement = document.getElementById("timer-area")
 
 let shuffledQuestions, currentQuestionIndex
 
-var count = 15;
-var interval = setInterval(function(){
-  document.getElementById('timer-sec').innerHTML=count;
+
+var interval = setInterval(function (){
+  document.getElementById('timer-sec').innerHTML= count;
   count--;
-  console.log("working")
   if (count === -2){
     clearInterval(interval);
-    document.getElementById('timer-sec').innerHTML='Done';
-    // or...
+    document.getElementById('timer-sec').innerHTML='Done'; 
     alert("You're out of time!");
+    startButton.innerText = "Restart"
+    startButton.classList.remove("hide")
+    questionContainerElements.classList.add("hide")
   }
 }, 1000);
 
@@ -34,6 +35,7 @@ function startGame() {
     questionContainerElements.classList.remove("hide")
     instructionContainerElements.classList.add("hide")
     timerElement.classList.remove("hide")
+    count = 30;
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     nextQuestion()
@@ -74,7 +76,7 @@ function selectAnswer(e) {
      if (shuffledQuestions.length > currentQuestionIndex + 1) {
      nextButton.classList.remove("hide")
 } else {
-    startButton.innerText = "restart"
+    startButton.innerText = "Restart"
     startButton.classList.remove("hide")
 }
 }
@@ -94,10 +96,12 @@ function incrementScore(){
 
     let oldScore = parseInt(document.getElementById("correct").innerText)
     document.getElementById("correct").innertext = ++oldScore;
+    console.log("working")
 }
 function incrementWrongAnswer(){
     let oldScore = parseInt(document.getElementById("incorrect").innerText)
     document.getElementById("incorrect").innertext = ++oldScore;
+    console.log("working")
 }
 
 const questions = [
