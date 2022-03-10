@@ -5,27 +5,55 @@
 
 This website was targetted at people who want to test their general knowledge on a range of topics, want to gain more information on general topics and want to entertain themselves with a fun quiz. The timer section will have a countdown of 30 seconds, to put some urgency on the users answering the questions. There will also be a score section so that users are able to see how well they've done. This will give them the incentive to keep playing again in hopes of beating their high scores. 
 
+Quizes have been shown to greatly help develop key skills. Attention, focus and concentration are improved by games such as this. Also users can greatly benefit from exercising and utilising their brains, and any activity which encourages mental activity maintains and can improve mental function.
+
 This website was built using knowledge gained from HTML, CSS and JacaScript modules, for the purpose of completing my second Milestone Project for the Code Institute's full stack developer course. This website is easy to navigate and easy to read, with a clear goal and aim. 
 
+ # User Experience/User Interface (UX/UI)
+
+ - ## User Stories
+   ### First Time User Goals
+   As a first time user I want:
+   - the rules and final aim of the quiz to be easy to understand.  
+   - to be entertained and engaged with the quiz.  
+   - the quiz to function correctly.  
+   - to be able to complete the quiz on various different devices. 
+   
+   ### Frequent User Goals
+   As a frequent user I want:
+   - to be able to score my performance.
+   - to be able to challenge myself by answering questions within the timer.
+   - to be able to use the quiz on various different devices.
+
+   ### Developer's Goals.
+   As the developer I want:
+   - to provide a fun and entertaining quiz.
+   - to provide a quiz to stimulate mental function.
+   - to encourage continued use of the quiz.
  
+ - ## Design 
+   - ### Colour Scheme
+   - ### Typography
+   - ### Wireframes
+
  # Features
- - ## Navigation 
+ - ## Responsive Website
 
- - ## The Hero Section 
+ - ## Instruction Page
 
-  - ## The Key Facts Section
-
+ - ## Start Button
   
- - ## The Timeline Section 
+ - ## Next Button 
   
-
-  - ## The Gallery Section
+ - ## Reset Button 
     
-
-  - ## The Competition Section
+ - ## Timer 
     
+ - ## Score Area
 
-  - ## Footer
+ - ## Game Area
+
+ - ## Possible Future Features
     
 
  # Testing 
