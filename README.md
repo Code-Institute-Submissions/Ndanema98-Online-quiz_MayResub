@@ -35,9 +35,9 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    ### Colour Scheme
    ### Typography
    ### Wireframes
-   ![A screenshot of my wireframe 1](/assets/images/wireframing%201.png)
-   
-   ![A screenshot of my wireframe 2](/assets/images/wireframing%202.png)
+   ![A screenshot of my wireframe 1](/assets/images/wireframing1.png)
+
+   ![A screenshot of my wireframe 2](/assets/images/wireframing2.png)
 
  # Features
  - ## Responsive Website
@@ -45,15 +45,19 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
  - ## Instruction Page
 
  - ## Start Button
-  
- - ## Next Button 
-  
- - ## Reset Button 
-    
- - ## Timer 
-    
- - ## Score Area
+   ![A screenshot of my start button](/assets/images/start-button.png)
 
+ - ## Next Button 
+   ![A screenshot of my next button](/assets/images/next-button.png)
+
+ - ## Restart Button 
+    ![A screenshot of my restart button](/assets/images/restart-button.png)
+
+ - ## Timer 
+    ![A screenshot of my timer](/assets/images/timer.png)
+
+ - ## Score Area
+ 
  - ## Game Area
 
  - ## Possible Future Features
@@ -128,6 +132,8 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
     https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/?child=first
     
     https://www.youtube.com/watch?v=riDzcEQbX6k
+
+    https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz
 
   - ### Information 
     https://www.radiotimes.com/quizzes/pub-quiz-general-knowledge/
