@@ -51,7 +51,7 @@ h1 {
     width: 800px;
     box-sizing: border-box;
     max-width: 80%;
-    background-color: white;
+    background-color: rgb(105,105,105);
     border-radius: 5px;
     padding: 10px;
     margin-left: auto;
@@ -72,6 +72,7 @@ h1 {
     font-size: 2rem;
     position: absolute;
     bottom: 0;
+    color: rgb(40, 252, 249);
 }
 .scores {
     display: inline-block;
@@ -97,23 +98,25 @@ h1 {
     align-items: center;
     width: 145px;
     height: 50px;
-    background-color: rgb(0, 111, 201);
-    border: 1px solid rgb(40, 252, 249);
+    background-color: rgb(217, 217, 217);
+    border: 1px solid black;
     border-radius: 5px;
     padding: 0 8px;
-    color: whitesmoke;
+    color: rgb(0, 111, 201);
 }
 #timer-sec {
     font-size: 18px;
     font-weight: 500;
     background: black;
     height: 25px;
-    color: white;
+    color: rgb(0, 111, 201);
     text-align: center;
     line-height: 30px;
     border-radius: 10px;
     border: 1px solid black
-
+}
+#question {
+    color: rgb(40, 252, 249);
 }
 /* -- Buttons -- */
 #answer-btns{
@@ -157,7 +160,13 @@ h1 {
     .controls {
         width: 100%;
     }
+    .game-area{
+        width:70%;
+        height:60%;
+        position:relative;
+    }
     .question-container {
+        font-size: 1.5rem;
         padding: 10% 0;
         width: 100%;
     }
@@ -166,7 +175,7 @@ h1 {
     }
     .scores {
         margin: 0.5em auto;
-        display: block;
+        display: inline-block;
         padding: 5px;
     }
     .header {
@@ -174,7 +183,46 @@ h1 {
         display: flex;
         
     }
+    .btn {
+        font-size: 60%;
+    }
+    #answer-btns {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        margin:S 0; 
+        width:100%;
+    }
+    #start-btn {
+        width:100%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+    }
+    #next-btn{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    #timer-area{
+        margin: 0.5em auto;
+        font-size: smaller;
+        height: 8%;
+
+    
+    }
+    #question {
+        font-size: 60%;
+    }
+    #right {
+        float: left;
+    }
+    #wrong {
+        float:right;
+    }
+    
+  
 }
+
 
 @media (max-width: 600px) {
     .game-area {
@@ -189,5 +237,4 @@ h1 {
     .question-container {
         padding: 10px 0;
     }
-
 }
