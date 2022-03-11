@@ -5,6 +5,7 @@ const questionElement = document.getElementById("question")
 const answerButtonsElement = document.getElementById("answer-btns")
 const instructionContainerElements = document.getElementById("instructions")
 const timerElement = document.getElementById("timer-area")
+const rulesContainerElement = document.getElementById("rules")
 
 let shuffledQuestions, currentQuestionIndex
 let count = 10;
@@ -38,6 +39,7 @@ function startGame() {
     startButton.classList.add("hide")
     questionContainerElements.classList.remove("hide")
     instructionContainerElements.classList.add("hide")
+    rulesContainerElement.classList.add("hide")
     timerElement.classList.remove("hide")
     count = 10;
     gameStart()
