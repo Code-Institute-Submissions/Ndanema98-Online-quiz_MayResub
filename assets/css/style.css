@@ -70,7 +70,7 @@ h1 {
     margin: 5px auto;
     width: 60%;
     font-size: 2rem;
-    position: absolute;
+    position:fixed;
     bottom: 0;
     color: rgb(40, 252, 249);
 }
@@ -172,6 +172,7 @@ h1 {
     }
     .score-area {
         width: 100%;
+
     }
     .scores {
         margin: 0.5em auto;
