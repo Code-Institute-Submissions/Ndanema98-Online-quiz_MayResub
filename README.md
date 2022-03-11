@@ -1,7 +1,7 @@
 # Milestone project 2
 # General Knowledge Online Quiz
 
-[]() is a website designed to entertain and quiz people of all ages on thier general knowledge.  
+["General Knowledge Online Quiz"](https://ndanema98.github.io/Online-quiz/) is a website designed to entertain and quiz people of all ages on thier general knowledge.  
 
 This website was targetted at people who want to test their general knowledge on a range of topics, want to gain more information on general topics and want to entertain themselves with a fun quiz. The timer section will have a countdown of 30 seconds, to put some urgency on the users answering the questions. There will also be a score section so that users are able to see how well they've done. This will give them the incentive to keep playing again in hopes of beating their high scores. 
 
@@ -33,7 +33,28 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
  
  - ## Design 
    ### Colour Scheme
+   During the construction of my quiz i experimented with many different colours and decided to settle on using different shades of blue and grey. I decided to stick to only these two colours in order to make my quiz more visually appealing. The light blue was used for most of the text colour and this is because it contrats well agaisnt the darker grey. However the dark blue was used for the text for the buttons and the timer, which also contrats well agaisnt the lighter grey. Whenever a correct answer is selected the background will also go green and whenever an incorrect answer is selected the background will go red. 
+
+   - Dark Blue #006DC7
+   ![A screenshot of my colour 1](/assets/images/colour1.png)
+   
+   - Light Blue #27FCF8
+   ![A screenshot of my colour 2](/assets/images/colour2.png)
+
+   - Dark Grey #696969
+   ![A screenshot of my colour 3](/assets/images/colour3.png)
+
+   - Light Grey #D9D9D9
+   ![A screenshot of my colour 4](/assets/images/colour4.png)
+
+   - Red #FF0000
+   ![A screenshot of my colour 5](/assets/images/colour5.png)
+
+   - Green #008000
+   ![A screenshot of my colour 6](/assets/images/colour6.png)
+
    ### Typography
+   
    ### Wireframes
    ![A screenshot of my wireframe 1](/assets/images/wireframing1.png)
 
@@ -41,8 +62,10 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
 
  # Features
  - ## Responsive Website
+   ![A screenshot of my of responsive design](/assets/images/responsive-design.png)
 
  - ## Instruction Page
+   ![A screenshot of my of Instructions section](/assets/images/instructions.png)
 
  - ## Start Button
    ![A screenshot of my start button](/assets/images/start-button.png)
@@ -57,8 +80,10 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
     ![A screenshot of my timer](/assets/images/timer.png)
 
  - ## Score Area
+   ![A screenshot of my score area](/assets/images/scores.png)
  
  - ## Game Area
+   ![A screenshot of my game area](/assets/images/game-area.png)
 
  - ## Possible Future Features
     
