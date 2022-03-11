@@ -7,11 +7,11 @@ const instructionContainerElements = document.getElementById("instructions")
 const timerElement = document.getElementById("timer-area")
 
 let shuffledQuestions, currentQuestionIndex
-let count = 30;
+let count = 10;
 
 let questionCount = 0;
 
-var interval = setInterval(function (){
+function gameStart() { var interval = setInterval(function (){
   document.getElementById('count').innerHTML= count;
   count--;
   if (count === -1){
@@ -23,6 +23,7 @@ var interval = setInterval(function (){
     questionContainerElements.classList.add("hide")
   }
 }, 1000);
+}
 
 startButton.addEventListener("click", startGame)
 nextButton.addEventListener("click",() => {
@@ -38,14 +39,15 @@ function startGame() {
     questionContainerElements.classList.remove("hide")
     instructionContainerElements.classList.add("hide")
     timerElement.classList.remove("hide")
-    count = 30;
+    count = 10;
+    gameStart()
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     nextQuestion()
 }
 function nextQuestion(){
     questionCount++;
-    count = 30;
+    count = 10;
 
     if (questionCount > 10) {
         alert("10 Questions Reached")
