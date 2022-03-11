@@ -32,9 +32,12 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    - to encourage continued use of the quiz.
  
  - ## Design 
-   - ### Colour Scheme
-   - ### Typography
-   - ### Wireframes
+   ### Colour Scheme
+   ### Typography
+   ### Wireframes
+   ![A screenshot of my wireframe 1](/assets/images/wireframing%201.png)
+   
+   ![A screenshot of my wireframe 2](/assets/images/wireframing%202.png)
 
  # Features
  - ## Responsive Website
