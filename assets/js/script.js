@@ -7,7 +7,9 @@ const instructionContainerElements = document.getElementById("instructions")
 const timerElement = document.getElementById("timer-area")
 
 let shuffledQuestions, currentQuestionIndex
+let count = 30;
 
+let questionCount = 0;
 
 var interval = setInterval(function (){
   document.getElementById('count').innerHTML= count;
@@ -30,6 +32,7 @@ nextButton.addEventListener("click",() => {
 
 
 function startGame() {
+    questionCount = 0;
     console.log("Started")
     startButton.classList.add("hide")
     questionContainerElements.classList.remove("hide")
@@ -41,6 +44,14 @@ function startGame() {
     nextQuestion()
 }
 function nextQuestion(){
+    questionCount++;
+    count = 30;
+
+    if (questionCount > 10) {
+        alert("10 Questions Reached")
+        // YOU NEED A FUNCTION HERE TO END THE GAME
+    }
+
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
@@ -68,17 +79,25 @@ function resetState(){
 }
 function selectAnswer(e) {
      const selectedButton = e.target
+
      const correct = selectedButton.dataset.correct
+
+     if (selectedButton.hasAttribute('data-correct')){
+        incrementScore();
+     } else {
+        incrementWrongAnswer();
+     }
+
      setStatusClass(document.body, correct)
      Array.from(answerButtonsElement.children).forEach(button => {
          setStatusClass(button, button.dataset.correct)
      })
      if (shuffledQuestions.length > currentQuestionIndex + 1) {
      nextButton.classList.remove("hide")
-} else {
-    startButton.innerText = "Restart"
-    startButton.classList.remove("hide")
-}
+    } else {
+        startButton.innerText = "Restart"
+        startButton.classList.remove("hide")
+    }
 }
 function setStatusClass(element, correct) {
     clearStatusClass(element)
@@ -92,16 +111,16 @@ function clearStatusClass(element) {
     element.classList.remove("correct")
     element.classList.remove("wrong")
 }
-function incrementScore(){
 
+function incrementScore(){
     let oldScore = parseInt(document.getElementById("correct").innerText)
-    document.getElementById("correct").innertext = ++oldScore;
-    console.log("working")
+    newScore = oldScore + 1;
+    document.getElementById("correct").innerHTML = newScore;
 }
 function incrementWrongAnswer(){
     let oldScore = parseInt(document.getElementById("incorrect").innerText)
-    document.getElementById("incorrect").innertext = ++oldScore;
-    console.log("working")
+    newScore = oldScore + 1;
+    document.getElementById("incorrect").innerHTML = newScore;
 }
 
 const questions = [
