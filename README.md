@@ -33,7 +33,7 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
  
  - ## Design 
    ### Colour Scheme
-   During the construction of my quiz i experimented with many different colours and decided to settle on using different shades of blue and grey. I decided to stick to only these two colours in order to make my quiz more visually appealing. The light blue was used for most of the text colour and this is because it contrats well agaisnt the darker grey. However the dark blue was used for the text for the buttons and the timer, which also contrats well agaisnt the lighter grey. Whenever a correct answer is selected the background will also go green and whenever an incorrect answer is selected the background will go red. 
+   - During the construction of my quiz i experimented with many different colours and decided to settle on using different shades of blue and grey. I decided to stick to only these two colours in order to make my quiz more visually appealing. The light blue was used for most of the text colour and this is because it contrats well agaisnt the darker grey. However the dark blue was used for the text for the buttons and the timer, which also contrats well agaisnt the lighter grey. Whenever a correct answer is selected the background will also go green and whenever an incorrect answer is selected the background will go red. 
 
    - Dark Blue #006DC7
    ![A screenshot of my colour 1](/assets/images/colour1.png)
@@ -111,8 +111,9 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
  - ## Validator 
    - ### HTML
 
-
    - ### CSS 
+
+   - ### Javascript
     
 
   - ### Accessibility 
@@ -125,10 +126,10 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    - ### Unsolved 
       
  # Languages used 
-   -HTML
-   -CSS
-   -Javascript
-   
+   - HTML
+   - CSS
+   - Javascript
+
  # Technologies Used 
    - Git 
      - Allowed me to add commit and push my code to github for version control. 
@@ -168,20 +169,20 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
 
  # Credits
  - ## Images
-    The code used for my logo image can be [found here.](https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain)
+   - The code used for my logo image can be [found here.](https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain)
 
  - ## Code
    
-   The code for my html structure was taken from [Love Maths's walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/?child=first)
+   - The code for my html structure was taken from [Love Maths's walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/?child=first)
     
-   The code for my javascript quiz was taken from [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k)
+   - The code for my javascript quiz was taken from [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k)
 
-   The code for my javascript timer was taken from [Stack Overflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz)
+   - The code for my javascript timer was taken from [Stack Overflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz)
 
-   The code for my javascript scores was taken from[]()
+   - The code for my javascript scores was taken from[Stack Overflow](https://stackoverflow.com/questions/36921415/score-in-a-javascript-quiz)
 
  - ## Information 
-    https://www.radiotimes.com/quizzes/pub-quiz-general-knowledge/
+   - The questions for my quiz were taken from [Radio Times](https://www.radiotimes.com/quizzes/pub-quiz-general-knowledge/)
 
  # Acknowledgement 
     - The online tutors that Code Institute provides. 
