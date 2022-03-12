@@ -22,6 +22,9 @@ function gameStart() { var interval = setInterval(function (){
     startButton.innerText = "Restart"
     startButton.classList.remove("hide")
     questionContainerElements.classList.add("hide")
+    let oldScore = 0;
+        document.getElementById("correct").innerHTML = oldScore;
+        document.getElementById("incorrect").innerHTML = oldScore;
   }
 }, 1000);
 }
@@ -53,11 +56,25 @@ function nextQuestion(){
 
     if (questionCount > 10) {
         alert("10 Questions Reached")
-        // YOU NEED A FUNCTION HERE TO END THE GAME
+        let oldScore = 0;
+        document.getElementById("correct").innerHTML = oldScore;
+        document.getElementById("incorrect").innerHTML = oldScore;
+
+
+
+
+
+
+        endGame()
     }
 
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
+}
+function endGame (){
+    startButton.innerText = "Restart"
+    startButton.classList.remove("hide")
+    questionContainerElements.classList.add("hide")
 }
 function showQuestion(question){
     questionElement.innerText = question.question
