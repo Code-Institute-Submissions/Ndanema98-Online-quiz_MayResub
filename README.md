@@ -108,7 +108,6 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    - Displays the users score when the game is over. 
    - Set up a high-scores table on localStorage so users can compare their scores to others.
     
-
  # Testing 
  - ## Manual 
    - This website has been tested using three different browsers (Google Chrome, Firefox, Safari) and I can confirm that it works. 
@@ -136,20 +135,23 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
   
 - ## Bugs 
    - ### Solved 
-     - #### Ammend issue with start button
+     - #### Issue with start button
+     When the start button was originallty being selected it was not working due to syntax errors. 
 
-     - #### Ammend issue with background colour
+     - #### Issue with background colour
+     When a correct or incorrect answer was being selected, the background didnt change to their respective colours. This was fixed using clearStatusClass(document.body). 
 
-     - #### Repair timer function
+     - #### Timer function
+     My timer was not counting down when the game was started because I did not define my count variable on the global scale. 
 
-     - #### Repair score board functionality
-
-     - #### Ammed score-area styling
-
-     - #### Hide instructions when quiz starts
+     - #### Score board functionality
+     My score board was not recording whenever a user got an answer correct or incorrect due to a syntax error. 
 
    - ### Unsolved 
      - #### Repair problem with media queries
+     On very small screens the score board overlaps the game-area sometimes, which sometimes causes functionality issues. 
+     - #### Lag with timer 
+     There is a very small lag between the start button being clicked and the timer starting.
       
  # Languages used 
    - HTML
