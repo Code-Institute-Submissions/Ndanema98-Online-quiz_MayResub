@@ -54,7 +54,7 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    ![A screenshot of my colour 6](/assets/images/colour6.png)
 
    ### Typography
-   
+
    ### Wireframes
    ![A screenshot of my wireframe 1](/assets/images/wireframing1.png)
 
@@ -64,26 +64,42 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
  - ## Responsive Website
    ![A screenshot of my of responsive design](/assets/images/responsive-design.png)
 
+   - This website changes it's layout to best display the content depending on the screen size. This allows the user to use the quiz on various different devices. 
+
  - ## Instruction Page
    ![A screenshot of my of Instructions section](/assets/images/instructions.png)
+
+    - When the page loads, you will be able to see the instruction section straight away, this is so the user immediately knows exactly what to do. 
 
  - ## Start Button
    ![A screenshot of my start button](/assets/images/start-button.png)
 
+   - When this is hovered over the colour of the text is changed, to allow the user to know exactly ewhich button they are selecting. When this is selected, the quiz starts and the timer starts to count down. 
+
  - ## Next Button 
    ![A screenshot of my next button](/assets/images/next-button.png)
+
+   - Like the rest of the other buttons, when this is hovered over the colour of the text is changed, to allow the user to know exactly ewhich button they are selecting. When this is selected another question will be chosen at random and displayed. 
 
  - ## Restart Button 
     ![A screenshot of my restart button](/assets/images/restart-button.png)
 
+      - Like the rest of the other buttons, when this is hovered over the colour of the text is changed, to allow the user to know exactly ewhich button they are selecting. When this is selected the quiz starts again from question 1. 
+
  - ## Timer 
     ![A screenshot of my timer](/assets/images/timer.png)
 
+     - The timer function counts down from 10 for each question. When the timer reaches 0, the game is ended. This allows for a more challenging quiz for the user. 
+
  - ## Score Area
-   ![A screenshot of my score area](/assets/images/scores.png)
+    ![A screenshot of my score area](/assets/images/scores.png)
+
+     - The score area shows the user how many answers they got correct and how many answers they got wrong. This allows the users to see how well they've done and encourage them them to play again. 
  
  - ## Game Area
    ![A screenshot of my game area](/assets/images/game-area.png)
+ 
+   - The game area displays questions at random and also displays the answer buttons which users are able to select an option from. 
 
  - ## Possible Future Features
     
@@ -92,11 +108,11 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
  - ## Manual 
    
 
-- ## Validator 
-  - ### HTML
+ - ## Validator 
+   - ### HTML
 
 
-  - ### CSS 
+   - ### CSS 
     
 
   - ### Accessibility 
@@ -108,14 +124,18 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
 
    - ### Unsolved 
       
-
-- ## Technologies Used 
+ # Languages used 
+   -HTML
+   -CSS
+   -Javascript
+   
+ # Technologies Used 
    - Git 
      - Allowed me to add commit and push my code to github for version control. 
    - Gitpod 
-     - The programme used to code my website 
+     - The programme used to code my website.
    - Github 
-     - Allowed me to store my repository and files pushed from Gitpod 
+     - Allowed me to store my repository and files pushed from Gitpod.
    - Fontawesome 
      - Used to display icons to make my website more visually appealing. 
    - Chrome developer tools 
@@ -125,45 +145,45 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    - W3C Validator 
       - Allowed me to validate my HTML and CSS code against industry standard. 
 
-- ## Deployment
-   - ### Remote 
-
+ # Deployment
+  - ## Remote 
    1. Click on the settings icon in the navigation bar.
    2. Scoll until Github pages is visable.
    3. Once clicked change the branch to "main" and change the directory to "root". 
    4. Next, click the save button. 
    5. It may take a few moments for the website to publish but once its done, a link to the live website will be provided. 
 
-    - ### Forking
-    1. In the top right corner of the page click on the fork button. 
-    2. The next page will show a forked version of my project. 
+ - ## Forking
+   1. In the top right corner of the page click on the fork button. 
+   2. The next page will show a forked version of my project. 
 
-    - ### Cloning a repository
-     1. Fork the repository using the steps above. 
-     2. Next click code 
-     3. You will then be asked if you want to clone using HTTPS, SSH or Github CLI
-     4. Click the copy button
-     5. Open Git bash and select the directory you want the clone to go to
-     6. Type git clone and then paste the URL. 
-     7. Lastly press enter and your clone will be created. 
+ - ## Cloning a repository
+   1. Fork the repository using the steps above. 
+   2. Next click code 
+   3. You will then be asked if you want to clone using HTTPS, SSH or Github CLI
+   4. Click the copy button
+   5. Open Git bash and select the directory you want the clone to go to
+   6. Type git clone and then paste the URL. 
+   7. Lastly press enter and your clone will be created. 
 
-- ## Credits
-  - ### Images
-    https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain
+ # Credits
+ - ## Images
+    The code used for my logo image can be [found here.](https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain)
 
-    https://hslpicker.com/#5f5959
-
-  - ### Code
-    https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/?child=first
+ - ## Code
+   
+   The code for my html structure was taken from [Love Maths's walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/?child=first)
     
-    https://www.youtube.com/watch?v=riDzcEQbX6k
+   The code for my javascript quiz was taken from [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k)
 
-    https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz
+   The code for my javascript timer was taken from [Stack Overflow](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz)
 
-  - ### Information 
+   The code for my javascript scores was taken from[]()
+
+ - ## Information 
     https://www.radiotimes.com/quizzes/pub-quiz-general-knowledge/
 
-- ## Acknowledgement 
+ # Acknowledgement 
     - The online tutors that Code Institute provides. 
     - My mentor Ben Kav for helping me when I was stuck. 
     - Everybody on slack, for their advice. 
