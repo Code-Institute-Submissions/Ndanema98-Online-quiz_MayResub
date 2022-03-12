@@ -1,13 +1,13 @@
-const startButton = document.getElementById("start-btn")
-const nextButton = document.getElementById("next-btn")
-const questionContainerElements = document.getElementById("question-container") 
-const questionElement = document.getElementById("question")
-const answerButtonsElement = document.getElementById("answer-btns")
-const instructionContainerElements = document.getElementById("instructions")
-const timerElement = document.getElementById("timer-area")
-const rulesContainerElement = document.getElementById("rules")
+const startButton = document.getElementById("start-btn");
+const nextButton = document.getElementById("next-btn");
+const questionContainerElements = document.getElementById("question-container");
+const questionElement = document.getElementById("question");
+const answerButtonsElement = document.getElementById("answer-btns");
+const instructionContainerElements = document.getElementById("instructions");
+const timerElement = document.getElementById("timer-area");
+const rulesContainerElement = document.getElementById("rules");
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex;
 let count = 10;
 
 let questionCount = 0;
@@ -19,9 +19,9 @@ function gameStart() { var interval = setInterval(function (){
     clearInterval(interval);
     document.getElementById('count').innerHTML='Done'; 
     alert("You're out of time!");
-    startButton.innerText = "Restart"
-    startButton.classList.remove("hide")
-    questionContainerElements.classList.add("hide")
+    startButton.innerText = "Restart";
+    startButton.classList.remove("hide");
+    questionContainerElements.classList.add("hide");
     let oldScore = 0;
         document.getElementById("correct").innerHTML = oldScore;
         document.getElementById("incorrect").innerHTML = oldScore;
@@ -29,79 +29,74 @@ function gameStart() { var interval = setInterval(function (){
 }, 1000);
 }
 
-startButton.addEventListener("click", startGame)
+startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click",() => {
-    currentQuestionIndex++
-    nextQuestion()
-})
+    currentQuestionIndex++;
+    nextQuestion();
+});
 
 
 function startGame() {
     questionCount = 0;
-    console.log("Started")
-    startButton.classList.add("hide")
-    questionContainerElements.classList.remove("hide")
-    instructionContainerElements.classList.add("hide")
-    rulesContainerElement.classList.add("hide")
-    timerElement.classList.remove("hide")
+    console.log("Started");
+    startButton.classList.add("hide");
+    questionContainerElements.classList.remove("hide");
+    instructionContainerElements.classList.add("hide");
+    rulesContainerElement.classList.add("hide");
+    timerElement.classList.remove("hide");
     count = 10;
-    gameStart()
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    nextQuestion()
+    gameStart();
+    shuffledQuestions = questions.sort(() => Math.random() - ".5");
+    currentQuestionIndex = 0;
+    nextQuestion();
 }
 function nextQuestion(){
     questionCount++;
     count = 10;
 
     if (questionCount > 10) {
-        alert("10 Questions Reached")
+        alert("10 Questions Reached");
         let oldScore = 0;
         document.getElementById("correct").innerHTML = oldScore;
         document.getElementById("incorrect").innerHTML = oldScore;
-
-
-
-
-
-
-        endGame()
+        endGame();
     }
 
-    resetState()
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 function endGame (){
-    startButton.innerText = "Restart"
-    startButton.classList.remove("hide")
-    questionContainerElements.classList.add("hide")
+    startButton.innerText = "Restart";
+    startButton.classList.remove("hide");
+    questionContainerElements.classList.add("hide");
+    
 }
 function showQuestion(question){
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
     question.answers.forEach(answer => {
-        const button = document.createElement("button")
-        button.innerText = answer.text
-        button.classList.add("btn")
+        const button = document.createElement("button");
+        button.innerText = answer.text;
+        button.classList.add("btn");
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener("click", selectAnswer)
-        answerButtonsElement.appendChild(button) 
-    })
+        button.addEventListener("click", selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
 }
 
 function resetState(){
-    clearStatusClass(document.body)
-    nextButton.classList.add("hide")
+    clearStatusClass(document.body);
+    nextButton.classList.add("hide");
     while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild
-        (answerButtonsElement.firstChild)
+        (answerButtonsElement.firstChild);
     }
 }
 function selectAnswer(e) {
-     const selectedButton = e.target
+     const selectedButton = e.target;
 
-     const correct = selectedButton.dataset.correct
+     const correct = selectedButton.dataset.correct;
 
      if (selectedButton.hasAttribute('data-correct')){
         incrementScore();
@@ -109,38 +104,38 @@ function selectAnswer(e) {
         incrementWrongAnswer();
      }
 
-     setStatusClass(document.body, correct)
+     setStatusClass(document.body, correct);
      Array.from(answerButtonsElement.children).forEach(button => {
-         setStatusClass(button, button.dataset.correct)
-     })
+         setStatusClass(button, button.dataset.correct);
+     });
      if (shuffledQuestions.length > currentQuestionIndex + 1) {
-     nextButton.classList.remove("hide")
+     nextButton.classList.remove("hide");
     } else {
-        startButton.innerText = "Restart"
-        startButton.classList.remove("hide")
+        startButton.innerText = "Restart";
+        startButton.classList.remove("hide");
     }
 }
 function setStatusClass(element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     if(correct) {
-        element.classList.add("correct")
+        element.classList.add("correct");
     } else {
-        element.classList.add("wrong")
+        element.classList.add("wrong");
     }
 }
 function clearStatusClass(element) {
-    element.classList.remove("correct")
-    element.classList.remove("wrong")
+    element.classList.remove("correct");
+    element.classList.remove("wrong");
 }
 
 function incrementScore(){
-    let oldScore = parseInt(document.getElementById("correct").innerText)
-    newScore = oldScore + 1;
+    let oldScore = parseInt(document.getElementById("correct").innerText);
+    let newScore = oldScore + 1;
     document.getElementById("correct").innerHTML = newScore;
 }
 function incrementWrongAnswer(){
-    let oldScore = parseInt(document.getElementById("incorrect").innerText)
-    newScore = oldScore + 1;
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    let newScore = oldScore + 1;
     document.getElementById("incorrect").innerHTML = newScore;
 }
 
@@ -325,5 +320,5 @@ const questions = [
             {text: "Nose", correct:false}, 
         ]
     },
-]
+];
 

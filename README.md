@@ -126,7 +126,8 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
      ![A screenshot of my css validation](/assets/images/cssvalidator.png)
 
    - ### Javascript
-    
+     - The Javascript file was validated using JSHint and no errors were found. The New JavaScript features (ES6) option was ticked in the Configure menu.
+      ![A screenshot of my Javascript validation](/assets/images/javascriptfunctionality.png)
 
   - ## Accessibility 
     - The Lighthouse function in devtools was used to see if the font and the font colours used were easy to read and access. I can confirm that the page on my website passed. 
@@ -170,9 +171,11 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    - Chrome developer tools 
      - Allowed me to troubleshoot and edit my code.
    - Am I Responsive 
-      - Allowed me to check the responsiveness of my website at different screen sizes. 
+     - Allowed me to check the responsiveness of my website at different screen sizes. 
    - W3C Validator 
-      - Allowed me to validate my HTML and CSS code against industry standard. 
+     - Allowed me to validate my HTML and CSS code against industry standard. 
+   - JSHint 
+     - Allowed me to validate my Javascript code against industry standard. 
 
  # Deployment
   - ## Remote 
