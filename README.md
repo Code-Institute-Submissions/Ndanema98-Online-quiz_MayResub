@@ -104,7 +104,9 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    - The game area displays questions at random and also displays the answer buttons which users are able to select an option from. 
 
  - ## Possible Future Features
-   - 
+   - Catogorize my questions so users can select what catogory of questions they want at the start. 
+   - Displays the users score when the game is over. 
+   - Set up a high-scores table on localStorage so users can compare their scores to others.
     
 
  # Testing 
@@ -117,8 +119,12 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
 
  - ## Validator 
    - ### HTML
+     - The official W3C validator was used to validate my HTML. No errors were found when my code was input.
+     ![A screenshot of my html validation](/assets/images/htmlvalidator.png)
 
    - ### CSS 
+     - The official W3C validator (Jigsaw) was used to validate my CSS. No errors were found when my code was input.
+     ![A screenshot of my css validation](/assets/images/cssvalidator.png)
 
    - ### Javascript
     

@@ -9,7 +9,6 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: hsl(var(--hue), 0%, 45%);
 }
 :root {
     --hue-neutral: 1000;
@@ -107,7 +106,6 @@ h1 {
 #timer-sec {
     font-size: 18px;
     font-weight: 500;
-    background: black;
     height: 25px;
     color: rgb(0, 111, 201);
     text-align: center;
@@ -200,7 +198,7 @@ h1 {
     #answer-btns {
         display: grid;
         grid-template-columns: repeat(1, auto);
-        margin:S 0; 
+        margin: 0; 
         width:100%;
     }
     #start-btn {
