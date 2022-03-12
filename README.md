@@ -54,6 +54,8 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    ![A screenshot of my colour 6](/assets/images/colour6.png)
 
    ### Typography
+   - I choose 'Roboto Condensed' as the font for my website. It is a big very easy and clear to read because of the spacings of the letters.
+   ![A screenshot of my font family](/assets/images/fontfamily.png)
 
    ### Wireframes
    ![A screenshot of my wireframe 1](/assets/images/wireframing1.png)
@@ -102,6 +104,7 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    - The game area displays questions at random and also displays the answer buttons which users are able to select an option from. 
 
  - ## Possible Future Features
+   - 
     
 
  # Testing 
@@ -116,14 +119,25 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    - ### Javascript
     
 
-  - ### Accessibility 
+  - ## Accessibility 
     
   
 - ## Bugs 
    - ### Solved 
-     
+     - #### Ammend issue with start button
+
+     - #### Ammend issue with background colour
+
+     - #### Repair timer function
+
+     - #### Repair score board functionality
+
+     - #### Ammed score-area styling
+
+     - #### Hide instructions when quiz starts
 
    - ### Unsolved 
+     - #### Repair problem with media queries
       
  # Languages used 
    - HTML
@@ -154,11 +168,11 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
    4. Next, click the save button. 
    5. It may take a few moments for the website to publish but once its done, a link to the live website will be provided. 
 
- - ## Forking
+  - ## Forking
    1. In the top right corner of the page click on the fork button. 
    2. The next page will show a forked version of my project. 
 
- - ## Cloning a repository
+  - ## Cloning a repository
    1. Fork the repository using the steps above. 
    2. Next click code 
    3. You will then be asked if you want to clone using HTTPS, SSH or Github CLI
