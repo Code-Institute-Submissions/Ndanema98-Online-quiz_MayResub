@@ -130,7 +130,9 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
     
 
   - ## Accessibility 
-    
+    - The Lighthouse function in devtools was used to see if the font and the font colours used were easy to read and access. I can confirm that the page on my website passed. 
+    ![A screenshot of my css validation](/assets/images/accesibility.png)
+
   
 - ## Bugs 
    - ### Solved 
