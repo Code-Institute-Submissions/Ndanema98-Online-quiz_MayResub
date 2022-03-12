@@ -109,7 +109,11 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
 
  # Testing 
  - ## Manual 
-   
+   - This website has been tested using three different browsers (Google Chrome, Firefox, Safari) and I can confirm that it works. 
+   - This website has been tested with all the standard screen sizes and I can confirm that it is responsive. 
+   - The buttons have all been tested and I can confirm that they all perform thier respective functions.
+   - I can confirm that the timer works and counts down until it reaches 0. 
+   - The score board has also been tested and I can confirm that the correct and incoreect answers are added whenever a user answers the question.
 
  - ## Validator 
    - ### HTML
