@@ -1,3 +1,6 @@
+/**
+ * Declare constants and other variables for DOM elements
+ */
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
 const questionContainerElements = document.getElementById("question-container");
@@ -11,6 +14,19 @@ let shuffledQuestions, currentQuestionIndex;
 let count = 10;
 
 let questionCount = 0;
+
+/**
+ * Button event listeners
+ */
+startButton.addEventListener("click", startGame);
+nextButton.addEventListener("click",() => {
+    currentQuestionIndex++;
+    nextQuestion();
+});
+
+/**
+ * The main game Functions
+ */
 
 function gameStart() { var interval = setInterval(function (){
   document.getElementById('count').innerHTML= count;
@@ -28,13 +44,6 @@ function gameStart() { var interval = setInterval(function (){
   }
 }, 1000);
 }
-
-startButton.addEventListener("click", startGame);
-nextButton.addEventListener("click",() => {
-    currentQuestionIndex++;
-    nextQuestion();
-});
-
 
 function startGame() {
     questionCount = 0;
@@ -138,7 +147,9 @@ function incrementWrongAnswer(){
     let newScore = oldScore + 1;
     document.getElementById("incorrect").innerHTML = newScore;
 }
-
+/**
+ * Questions
+ */
 const questions = [
     {
         question: "What is the capital of New Zealand?",
