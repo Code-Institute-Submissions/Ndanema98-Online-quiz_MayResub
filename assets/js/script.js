@@ -15,6 +15,9 @@ let count = 10;
 
 let questionCount = 0;
 
+let interval;
+let pauseTimer = true;
+
 /**
  * Button event listeners
  */
@@ -28,26 +31,30 @@ nextButton.addEventListener("click",() => {
  * The main game Functions
  */
 
-function gameStart() { var interval = setInterval(function (){
-  document.getElementById('count').innerHTML= count;
-  count--;
-  if (count === -1){
-    clearInterval(interval);
-    document.getElementById('count').innerHTML='Done'; 
-    alert("You're out of time!");
-    startButton.innerText = "Restart";
-    startButton.classList.remove("hide");
-    questionContainerElements.classList.add("hide");
-    let oldScore = 0;
-        document.getElementById("correct").innerHTML = oldScore;
-        document.getElementById("incorrect").innerHTML = oldScore;
+function gameStart() { 
+    interval = setInterval(function (){
+       if (!pauseTimer) {
+        count--;
+        document.getElementById('count').innerHTML = count;
+        if (count === -1){
+            clearInterval(interval);
+            document.getElementById('count').innerHTML='Done'; 
+             alert("You're out of time!");
+             startButton.innerText = "Restart";
+             startButton.classList.remove("hide");
+             questionContainerElements.classList.add("hide");
+             let oldScore = 0;
+             document.getElementById("correct").innerHTML = oldScore;
+             document.getElementById("incorrect").innerHTML = oldScore;
   }
+}
 }, 1000);
 }
 
 function startGame() {
     questionCount = 0;
     console.log("Started");
+    pauseTimer = false;
     startButton.classList.add("hide");
     questionContainerElements.classList.remove("hide");
     instructionContainerElements.classList.add("hide");
@@ -59,9 +66,17 @@ function startGame() {
     currentQuestionIndex = 0;
     nextQuestion();
 }
+
 function nextQuestion(){
-    questionCount++;
+    document.getElementById("count").innerHTML = "10";
+
+    clearInterval(interval)
     count = 10;
+    gameStart()
+
+    pauseTimer = false;
+    questionCount++;
+
 
     if (questionCount > 10) {
         alert("10 Questions Reached");
@@ -78,7 +93,9 @@ function endGame (){
     startButton.innerText = "Restart";
     startButton.classList.remove("hide");
     questionContainerElements.classList.add("hide");
-    
+    pauseTimer = true
+    clearInterval(interval);
+    timerElement.classList.add("hide");
 }
 function showQuestion(question){
     questionElement.innerText = question.question;
@@ -123,7 +140,18 @@ function selectAnswer(e) {
         startButton.innerText = "Restart";
         startButton.classList.remove("hide");
     }
-}
+    clearInterval(interval)
+    pauseTimer = true;
+
+    Array.from(answerButtonsElement.children).forEach(button =>
+        { 
+            button.removeEventListener("click",selectAnswer);
+        });
+
+    }
+
+
+
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if(correct) {
