@@ -148,9 +148,9 @@ This website was built using knowledge gained from HTML, CSS and JacaScript modu
      - #### Score board functionality
      My score board was not recording whenever a user got an answer correct or incorrect due to a syntax error. 
 
-   - ### Unsolved 
      - #### Repair problem with media queries
      On very small screens the score board overlaps the game-area sometimes, which sometimes causes functionality issues. 
+
      - #### Lag with timer 
      There is a very small lag between the start button being clicked and the timer starting.
       
